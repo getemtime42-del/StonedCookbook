@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Stoned Cookbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="splash-screen" class="screen active">
+        <div class="glow-container">
+            <div class="purple-pulse"></div>
+            <svg class="leaf-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 90 L50 70 Q20 50 50 10 Q80 50 50 70 Z" fill="#051105" stroke="#1B301B" stroke-width="2"/>
+            </svg>
+        </div>
+    </div>
+
+    <div id="onboarding-screen" class="screen hidden">
+        <div class="themed-box">
+            <h2 id="ob-title">Elevate Your Mind</h2>
+            <p id="ob-text">Welcome to your new culinary companion...</p>
+            
+            <div id="waiver-section" class="hidden">
+                <div class="scrollable-legal">
+                    <p class="legal-text">By checking this box, you acknowledge that you are of legal age and understand the risks associated with infused products. You agree to use these recipes responsibly. We are not liable for individual experiences, and you accept that over-consumption can lead to temporary discomfort. Always consult local laws.</p>
+                </div>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="waiver-checkbox">
+                    <span class="checkmark"></span>
+                    I have read and agree to the terms.
+                </label>
+            </div>
+
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <div id="dashboard-screen" class="screen hidden">
+        <div class="dashboard-header">
+            <h2>The Dashboard</h2>
+            <p>Welcome to your culinary hub.</p>
+        </div>
+        <div class="menu-grid">
+            <button class="menu-btn" id="base-btn">
+                <h3>Base</h3>
+                <span>Oils, Butter & Honey</span>
+            </button>
+            <button class="menu-btn">
+                <h3>Recipes</h3>
+                <span>Elevated Cuisine</span>
+            </button>
+            <button class="menu-btn">
+                <h3>Calculator</h3>
+                <span>Potency Math</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
